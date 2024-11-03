@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha do Contestado</title>
+    <link rel="stylesheet" href="css/Style.css">
+</head>
+<body>
+    
+    <section id="poster" onmouseout="salvarInfo()">
+        <h1>Procurado</h1>
+        <h2>?</h2>
+        <input type="text" name="nome" id="nomeP" placeholder="Nome do Pelado">
+        <div id="tormenta">
+            <p>Tormento de</p>
+            <input type="text" name="tormento" id="tormento" placeholder="Seu tormento">
+        </div>
+        <textarea type="text" name="desc" id="descP" placeholder="Descrição"></textarea>
+        <input type="text" name="recompensa" id="recompensa" placeholder="Recompensa pela sua cabeça">
+    </section>
+
+    <section id="infoN" onmouseleave="salvarInfo()">
+        <input type="number" name="nivel" id="nivel" placeholder="Nivel">
+        <p>Vida Atual | Vida Max</p>
+        <input type="number" name="vidaA" id="vidaA" placeholder="Vida Atual"> / <input type="number" name="vidaMax" id="vidaMax" placeholder="Vida Maxima">
+        <p>Defesa</p>
+        <input type="number" name="def" id="def" placeholder="Defesa" class="infonmax">
+        <p>Iniciativa</p>
+        <input type="number" name="iniciativa" id="iniciativa" class="infonmax" placeholder="Iniciativa">
+        <p>Ações</p>
+        <input type="number" name="acoes" id="acoes" placeholder="Acoes no turno" class="infonmax">
+    </section>
+
+    <section id="atributos" onmouseleave="salvarInfo()">
+        <div>
+            <p>Físico</p>
+            <input type="number" name="AttFis" id="AttFis">
+        </div>
+        <pre>É o atributo que define os Pontos de<br>Vida de sua personagem e o quanto<br>seu corpo é resistente a doenças,<br>venenos e outras provações físicas.<br><strong>Some 1d6+2 Pontos<br>de Vida para cada<br>ponto em Físico.</strong></pre>
+        <div>
+            <p>Agilidade</p>
+            <input type="number" name="AttAgi" id="AttAgi">
+        </div>
+        <pre>Este atributo determina sua velocidade ao fazer ataques <br> e sua aptidão para tudo o que envolve destreza,<br> furtividade e habilidades manuais. <br> <strong>+1 ação em combate para cada ponto em Agilidade.</strong></pre>
+        <div>
+            <p>Intelecto</p>
+            <input type="number" name="AttInt" id="AttInt">
+        </div>
+        <pre>É o que determina o quanto sua<br>personagem tem conhecimentos,<br>inteligência e capacidade de<br>descobrir, notar ou memorizar<br>coisas importantes.<br><strong>+1 ponto de<br> Antecedente para<br> cada ponto em Intelecto.</strong></pre>
+        <div>
+            <p>Coragem</p>
+            <input type="number" name="AttCoragem" id="AttCoragem">
+        </div>
+        <pre>É como medimos a prontidão de sua<br>personagem, que não pensa duas<br>vezes antes de enfrentar qualquer<br>perigo. A Coragem é sua força de<br>vontade ou sua falta de noção.<br><strong>+1 em Iniciativa<br>para cada ponto<br>em Coragem.</strong></pre>
+        <div class="dinheiro">
+            <p>Dinheiro:</p>
+            <input type="text" name="dinheiro" class="dinheiro" id="dinheiro" placeholder="Seu dinheiro">
+        </div>
+        
+    </section>
+
+    <section id="habilidades" onmouseleave="salvarInfo()">
+        <h1>Habilidades:</h1>
+        <textarea name="habilidadestext" id="habilidadestext" cols="50" rows="18"></textarea>
+    </section>
+
+    <section id="antecedentesParte" onmouseleave="salvarInfo()">
+        <div>
+            <p>Combate</p>
+            <input type="number" name="AntComb" id="AntComb">
+        </div>
+        <pre>Este Antecedente é o mais importante<br>para atirar com suas armas, sair no<br>soco e até ter noção de estrategias em<br>batalhas maiores.<br>É recomendado ao menos um ponto<br>neste Antecedente devido à temática e<br>estilo do jogo, mas não é obrigatório.</pre>
+        <div>
+            <p>Negócios</p>
+            <input type="number" name="AntNegocio" id="AntNegocio">
+        </div>
+        <pre>Use este Antecedente para seduzir,<br>negociar, descobrir mentiras e más<br>intenções, convencer pessoas e em<br>tudo que envolva diálogos carregados<br>de intrigas e subtexto.</pre>
+        <div>
+            <p>Montaria</p>
+            <input type="number" name="AntMontaria" id="AntMontaria">
+        </div>
+        <pre>Este Antecedente lhe dá bônus para <br> qualquer manobra que fizer com<br>sua montaria, além de torná-la mais<br>confiante e veloz. Você sabe avaliar<br>a qualidade de um belo corcel, sabe<br>rastrear gado roubado e até conhece os<br>nvolvidos na pecuária da região.</pre>
+        <div>
+            <p>Tradição</p>
+            <input type="number" name="AntTradicao" id="AntTradicao">
+        </div>
+        <pre>Este Antecedente serve para muitas<br>coisas: desde o conhecimento sobre<br>venenos e remédios feitos com<br>plantas silvestres a detalhes sobre os<br>animais da região. Você também sabe<br>encontrar rastros em territórios ermos<br>e consegue se comunicar com outras<br>culturas sem qualquer problema.</pre>
+        <div>
+            <p>Labuta</p>
+            <input type="number" name="AntLabuta" id="AntLabuta">
+        </div>
+        <pre>A labuta te deu o conhecimento<br>para construir e consertar coisas,<br>mas também é o Antecedente que<br>determina suas aptidões físicas. É o<br>que marca se sua personagem sabe<br>nadar, correr, saltar mais longe ou<br>realizar diversos outros feitos sem<br>derramar uma gota de suor.<br>Este Antecedente pode ser usado em<br>diversos testes referentes a ofícios,<br>trabalhos e esforço físico.</pre>
+        <div>
+            <p>Exploração</p>
+            <input type="number" name="AntExplo" id="AntExplo">
+        </div>
+        <pre>Este Antecedente pode ser usado para<br>perceber ameaças, sobreviver na selva,<br>no deserto, na chuva, na fazenda ou<br>numa casinha de sapê. Também pode<br>ser usado para rastrear e apagar os<br>próprios rastros.</pre>
+        <div>
+            <p>Roubo</p>
+            <input type="number" name="AntRoubo" id="AntRoubo">
+        </div>
+        <pre>Se tudo der certo você faz uma grana<br>boa. Se der errado... bom, a gente vê o<br>que acontece depois.<br><br> Roubar em algo ou alguém</pre>
+        <div>
+            <p>Medicina</p>
+            <input type="number" name="AntMed" id="AntMed">
+        </div>
+        <pre>Você também sabe como tratar<br>diversas doenças terríveis que assolam<br>as pessoas do Oeste.<br>Faça testes com esse Antecedente<br>para ajudar na recuperação de Pontos<br>de Vida de seus aliados durante o<br>descanso. Também use-o para criar<br>remédios e obter informações sobre<br>novas infecções e doenças.</pre>    </section>
+
+    <section id="equip" onmouseleave="salvarInfo()">
+        <div>
+            <input type="text" id="item1" placeholder="Item">
+            <input type="text" id="stat1" placeholder="oq faz">
+        </div>
+        <div>
+            <input type="text" id="item2" placeholder="Item">
+            <input type="text" id="stat2" placeholder="oq faz">
+        </div>
+        <div>
+            <input type="text" id="item3" placeholder="Item">
+            <input type="text" id="stat3" placeholder="oq faz">
+        </div>
+        <div>
+            <input type="text" id="item4" placeholder="Item">
+            <input type="text" id="stat4" placeholder="oq faz">
+        </div>
+        <div>
+            <input type="text" id="item5" placeholder="Item">
+            <input type="text" id="stat5" placeholder="oq faz">
+        </div>
+        <div>
+            <input type="text" id="item6" placeholder="Item">
+            <input type="text" id="stat6" placeholder="oq faz">
+        </div>
+        <div>
+            <input type="text" id="item7" placeholder="Item">
+            <input type="text" id="stat7" placeholder="oq faz">
+        </div>
+        <div>
+            <input type="text" id="item8" placeholder="Item">
+            <input type="text" id="stat8" placeholder="oq faz">
+        </div>
+        <div>
+            <input type="text" id="item9" placeholder="Item">
+            <input type="text" id="stat9" placeholder="oq faz">
+        </div>
+        <div>
+            <input type="text" id="item10" placeholder="Item">
+            <input type="text" id="stat10" placeholder="oq faz">
+        </div>
+    </section>
+
+</body>
+<script src="JS/script.js"></script>
+</html>

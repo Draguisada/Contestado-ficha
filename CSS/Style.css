@@ -1,0 +1,342 @@
+@font-face {
+    font-family: FreakShow;
+    src: url(Fontes/Carnevalee-Freakshow.ttf);
+}
+
+@font-face {
+    font-family: Bronco;
+    src: url(Fontes/Bronco.ttf);
+}
+
+html {
+    background-image: url(Imagens/paper-background.png);
+    background-size:cover;
+}
+
+:root {
+    --cor-texto-destaque: #EFAC44;
+    --cor-titulo: #EFBF94;
+    --cor-texto-padrao: #FFFFFF;
+    --cor-subtitulos: #5D3813;
+    --cor-autor: #B7B9C3;
+
+    --cinza-oficina: #383838;
+
+
+    --tamanho-titulo-cidade: 7.5vw;
+    --tamanho-nome-musica: 2.083vw;
+    --tamanho-nome-autor: 1.25vw;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+
+
+
+#nomeP {
+    width: 100%;
+    /* background-image: url(Imagens/madeir.png); */
+    background-color: transparent;
+}
+
+#poster > h1, #poster > #nomeP, #tormento {
+    text-align: center;
+    height: fit-content;
+    font-size: 3rem;
+    font-family: FreakShow;
+    font-weight: 100;
+    color: black;
+    height: fit-content;
+    background-color: transparent;
+    border: none;
+}
+
+#tormenta p {
+    margin: 0;
+    text-align: center;
+    font-size: 2rem;
+    font-family: Bronco;
+}
+
+input::placeholder {
+    color:black;
+    opacity: 0.5;
+}
+
+#nivel {
+    width: 10rem;
+    height: 15vh;
+    color: white;
+    
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: 50%;
+}
+
+#poster {
+    min-width: 400px;
+    width: 22vw;
+    min-height: 60vh;
+    height: 66vh;
+    background-image: url(Imagens/old-photo.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+#poster > h1 {
+    margin: 3vh 0 1vh;
+}
+
+#poster > h2 {
+    font-size: 8rem;
+    height: fit-content;
+
+    font-family: FreakShow;
+    text-align: center;
+    margin: 0;
+}
+
+#descP {
+    height: 21%;
+    width: 80%;
+    justify-self: center;
+    background-color: transparent;
+    border-color: transparent;
+    align-items: baseline;
+    display: flex;
+    text-align: justify;
+
+}
+
+#infoN {
+    margin-top: 1.2rem;
+    display:flex;
+    align-items: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    width: 10rem;
+    background-image: url(Imagens/madeir.png);
+    color: white;
+    box-shadow: 3px 3px #383838;
+    height: fit-content;
+}
+
+#infoN > p {
+    width: 100%;
+    text-align: center;
+    
+}
+
+#infoN > .infonmax {
+    justify-self: center;
+    width: 100%;
+    height: 3rem;
+    font-size: 4rem;
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+#infoN > input {
+    text-align: center;
+    height: fit-content;
+    font-size: 8rem;
+    font-family: FreakShow;
+    
+    
+    border: none;
+}
+
+#infoN > input[name*="vida"] {
+    width: 4.6rem;
+    height: 2rem;
+    font-size: 2rem;
+    background-color: transparent;
+    color: white;
+    box-shadow: 0px 2px black;
+}
+
+#infoN > p {
+    margin-bottom: 0;
+    font-family: Bronco;
+    font-size: 1.3rem;
+}
+
+#atributos {
+    margin: 1.2rem  0 0 1.2rem;
+    order:3;
+}
+
+#atributos > div {
+    width: 100%;
+    max-width: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Bronco;
+    font-size: 2rem;
+    color: white;
+    background-color: black;
+    
+    padding: 0.5rem;
+    flex-wrap: wrap;
+}
+
+
+
+#atributos p {
+    margin: 0.5rem 1rem;
+}
+
+#atributos > div input {
+    width: 2rem;
+    height: 1.5rem;
+    background-color: transparent;
+    color: white;
+    font-size: 2.3rem;
+    border: none;
+    font-family: FreakShow;
+}
+
+#atributos > div.dinheiro {
+    background-color: white;
+    color: black;
+    border: 8px black solid;
+    padding:0 0 0.5rem 0;
+}
+
+#atributos > div input.dinheiro {
+    width: 100%;
+    text-align: center;
+    height: 1.4rem;
+    background-color: white;
+    color: black;
+}
+
+#tormento {
+    font-size: 2rem;
+    width: 100%;
+}
+
+#recompensa {
+    height: 5%;
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    font-family: Bronco;
+    font-size: 2rem;
+}
+
+#habilidades {
+    margin-top: 1.2rem;
+    margin-left: 2rem;
+    order:4;
+}
+
+#habilidades h1 {
+    color: black;
+    font-family: FreakShow;
+    font-size: 3rem;
+    margin: 0;
+}
+
+
+#antecedentesParte {
+    margin: 1.2rem  0 0 1.2rem;
+    order:1;
+}
+
+#dinheiro::placeholder {
+    color: white;
+}
+
+#antecedentesParte > div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Bronco;
+    font-size: 2rem;
+    color: white;
+    background-color: black;
+    padding: 0.5rem
+}
+
+#antecedentesParte p {
+    margin: 1rem;
+}
+
+#antecedentesParte > div input {
+    width: 2rem;
+    height: 1.5rem;
+    background-color: transparent;
+    color: white;
+    font-size: 2.3rem;
+    border: none;
+    font-family: FreakShow;
+}
+
+#equip {
+    border: 5px dashed black;
+    padding: 0.5rem;
+    width: 40rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 2rem;
+    height: fit-content;
+    order:5;
+}
+
+#equip > div input {
+    height: 2rem;
+    font-family: Bronco;
+    font-size: 1.5rem;
+    border: 1px dashed black;
+    background-color: var(--cor-texto-destaque);
+}
+
+#equip > div input::placeholder {
+    opacity: 0;
+}
+
+#equip > div input:focus::placeholder {
+    opacity: 0.6;
+}
+
+#equip > div input:first-of-type {
+    width: 70%;
+}
+#equip > div input:last-of-type {
+    width: 25%;
+}
+
+#equip > div {
+    margin: 1rem 0.5rem;
+    justify-content: space-between;
+    
+}
+
+
+pre {
+    display: none;
+    position: absolute;
+}
+
+div:hover + pre {
+    display: block;
+    z-index: 2;
+    font-size: 1.2rem;
+    text-align: justify;
+    background-color: white;
+    font-weight: bold;
+    padding:0.5rem;
+}
+
+pre strong {
+    background-color: whitesmoke;
+    color: red;
+}
