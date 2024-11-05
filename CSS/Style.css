@@ -9,7 +9,7 @@
 }
 
 html {
-    background-image: url(Imagens/paper-background.png);
+    background-image: url(Imagens/madeir.png);
     background-size:cover;
 }
 
@@ -34,7 +34,14 @@ body {
     height: fit-content;
 }
 
-
+section > h1 {
+    font-family: FreakShow;
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0;
+    color: white;
+    font-weight: 100;
+}
 
 #nomeP {
     width: 100%;
@@ -119,7 +126,7 @@ input::placeholder {
     align-content: flex-start;
     flex-wrap: wrap;
     width: 10rem;
-    background-image: url(Imagens/madeir.png);
+    background-color: rgba(66, 39, 7, 0.4);
     color: white;
     box-shadow: 3px 3px #383838;
     height: fit-content;
@@ -168,7 +175,7 @@ input::placeholder {
 
 #atributos {
     margin: 1.2rem  0 0 1.2rem;
-    order:3;
+    order:1;
 }
 
 #atributos > div {
@@ -238,11 +245,9 @@ input::placeholder {
     order:4;
 }
 
-#habilidades h1 {
-    color: black;
-    font-family: FreakShow;
-    font-size: 3rem;
-    margin: 0;
+#habilidades textarea {
+    width: 23vw;
+    height: 40vh;
 }
 
 
@@ -285,10 +290,10 @@ input::placeholder {
     border: 5px dashed black;
     padding: 0.5rem;
     width: 40rem;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     margin: 2rem;
     height: fit-content;
-    order:5;
+    order:3;
 }
 
 #equip > div input {
@@ -339,4 +344,13 @@ div:hover + pre {
 pre strong {
     background-color: whitesmoke;
     color: red;
+}
+
+#sina img {
+    width: 50%;
+}
+
+#sina input#sinaV {
+    width: 40%;
+    height: 200%;
 }

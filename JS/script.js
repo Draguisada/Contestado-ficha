@@ -23,7 +23,10 @@ function salvarInfo() {
 
     localStorage.recompensa = document.getElementById("recompensa").value;
 
-    localStorage.habilidadestext = document.getElementById("habilidadestext").value;
+    localStorage.habilidadestext1 = document.getElementsByClassName("habilidadestext")[0].value;
+    localStorage.habilidadestext2 = document.getElementsByClassName("habilidadestext")[1].value;
+    localStorage.habilidadestext3 = document.getElementsByClassName("habilidadestext")[2].value;
+    localStorage.habilidadestext4 = document.getElementsByClassName("habilidadestext")[3].value;
 
     localStorage.AntComb = document.getElementById("AntComb").value;
     localStorage.AntNegocio = document.getElementById("AntNegocio").value;
@@ -84,7 +87,10 @@ function onloadA() {
 
     document.getElementById("recompensa").value =localStorage.recompensa;
 
-    document.getElementById("habilidadestext").value =localStorage.habilidadestext;
+    document.getElementsByClassName("habilidadestext")[0].value = localStorage.habilidadestext1;
+    document.getElementsByClassName("habilidadestext")[1].value = localStorage.habilidadestext2;
+    document.getElementsByClassName("habilidadestext")[2].value = localStorage.habilidadestext3;
+    document.getElementsByClassName("habilidadestext")[3].value = localStorage.habilidadestext4;
 
     document.getElementById("AntComb").value =localStorage.AntComb;
     document.getElementById("AntNegocio").value =localStorage.AntNegocio;
