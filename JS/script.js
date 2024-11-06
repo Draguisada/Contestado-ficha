@@ -23,7 +23,7 @@ function salvarInfo() {
 
     localStorage.recompensa = document.getElementById("recompensa").value;
 
-    localStorage.habilidadestext1 = document.getElementsByClassName("habilidadestext")[0].value;
+    localStorage.habilidadestext = document.getElementsByClassName("habilidadestext")[0].value;
     localStorage.habilidadestext2 = document.getElementsByClassName("habilidadestext")[1].value;
     localStorage.habilidadestext3 = document.getElementsByClassName("habilidadestext")[2].value;
     localStorage.habilidadestext4 = document.getElementsByClassName("habilidadestext")[3].value;
@@ -87,7 +87,7 @@ function onloadA() {
 
     document.getElementById("recompensa").value =localStorage.recompensa;
 
-    document.getElementsByClassName("habilidadestext")[0].value = localStorage.habilidadestext1;
+    document.getElementsByClassName("habilidadestext")[0].value = localStorage.habilidadestext;
     document.getElementsByClassName("habilidadestext")[1].value = localStorage.habilidadestext2;
     document.getElementsByClassName("habilidadestext")[2].value = localStorage.habilidadestext3;
     document.getElementsByClassName("habilidadestext")[3].value = localStorage.habilidadestext4;
